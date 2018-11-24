@@ -1,2 +1,2 @@
 # BilibiliDownloader
-用于下载Bilibili上的视频等
+用于批量下载Bilibili上的视频等
