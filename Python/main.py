@@ -11,8 +11,10 @@ def add_common_info(info):
 def get_bilibili_html(av_url):
     # 设置头文件，应对反爬措施
     headers = {
-		'Cookie': 'buvid3=00000000-0000-0000-0000-00000000000000000000000;2; '
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+        'Cookie': 'buvid3=1F524FE2-8022-4945-A0AF-62ECB45FAD6E163017infoc; LIVE_BUVID=AUTO7215339028787612; '
                   ' im_notify_type_1=1',
+        'Host': 'www.bilibili.com'
     }
 
     # 直接返回HTML代码
@@ -63,8 +65,10 @@ def main():
 if __name__ == '__main__':
     # main()
     headers = {
-		'Cookie': 'buvid3=00000000-0000-0000-0000-00000000000000000000000;2; '
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+        'Cookie': 'buvid3=1F524FE2-8022-4945-A0AF-62ECB45FAD6E163017infoc; LIVE_BUVID=AUTO7215339028787612; '
                   ' im_notify_type_1=1',
+        'Host': 'www.bilibili.com'
     }
     url = 'https://www.bilibili.com/video/' + input('请输入AV号')
     print('一')
